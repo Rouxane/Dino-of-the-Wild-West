@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+DWW_Unity/Assets/Asset Store/ProCore/ProBuilder/Data/ProBuilderPreferences.asset
