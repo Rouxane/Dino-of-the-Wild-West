@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbb2be698c926948831ff4e8f1d7162, type: 3}
+  m_Name: Yuumi
+  m_EditorClassIdentifier: 
+  m_resourcesID: ae8f534e-14d1-45a3-ac3b-55d96fb50b31
+  m_name: Gaia Resource
+  m_seaLevel: 50
+  m_beachHeight: 5
+  m_terrainHeight: 1000
+  m_texturePrototypes:
+  - m_name: Albedo
+    m_texture: {fileID: 2800000, guid: e91cbc3d56c7f624d828d7ffc8918f4b, type: 3}
+    m_textureFileName: 
+    m_normal: {fileID: 2800000, guid: c64b1a4e6186a4344855a1eb270eda32, type: 3}
+    m_normalFileName: 
+    m_sizeX: 0
+    m_sizeY: 0
+    m_offsetX: 0
+    m_offsetY: 0
+    m_metalic: 0
+    m_smoothness: 0
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 0
+      m_checkHeight: 1
+      m_minHeight: 0
+      m_maxHeight: 10
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_checkSlope: 0
+      m_minSlope: 0
+      m_maxSlope: 0
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 0
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkTexture: 0
+      m_matchingTextures: 
+      m_isActive: 0
+    m_spawnExtensions: []
+  - m_name: Mud
+    m_texture: {fileID: 2800000, guid: 16021b951f748804b92d1c1ae916b0f9, type: 3}
+    m_textureFileName: 
+    m_normal: {fileID: 2800000, guid: 05efbbf9afdacef44a2db2cd3e7102cd, type: 3}
+    m_normalFileName: 
+    m_sizeX: 0
+    m_sizeY: 0
+    m_offsetX: 0
+    m_offsetY: 0
+    m_metalic: 0
+    m_smoothness: 0
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 0
+      m_checkHeight: 1
+      m_minHeight: 0
+      m_maxHeight: 6.5
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_checkSlope: 0
+      m_minSlope: 0
+      m_maxSlope: 0
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 0
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkTexture: 0
+      m_matchingTextures: 
+      m_isActive: 1
+    m_spawnExtensions: []
+  - m_name: Grass&Rock
+    m_texture: {fileID: 2800000, guid: b9ee8b9f278695142903546f2a5e7229, type: 3}
+    m_textureFileName: 
+    m_normal: {fileID: 2800000, guid: b6092590a23cd8a43a938c286383a434, type: 3}
+    m_normalFileName: 
+    m_sizeX: 0
+    m_sizeY: 0
+    m_offsetX: 0
+    m_offsetY: 0
+    m_metalic: 0
+    m_smoothness: 0
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 0
+      m_checkHeight: 1
+      m_minHeight: 6.5
+      m_maxHeight: 35
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_checkSlope: 0
+      m_minSlope: 0
+      m_maxSlope: 0
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 0
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkTexture: 0
+      m_matchingTextures: 
+      m_isActive: 1
+    m_spawnExtensions: []
+  m_detailPrototypes: []
+  m_treePrototypes: []
+  m_gameObjectPrototypes: []
