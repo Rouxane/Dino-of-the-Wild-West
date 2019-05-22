@@ -5,17 +5,17 @@ using UnityEngine;
 public class CameraManager : MonoBehaviour {
 
     public GameObject mainCamera;
-    public GameObject raptorCamera;
+    public GameObject parasaurolophusCamera;
     private int camPositionCounter = 0;
 
     AudioListener mainCamAudioLis;
-    AudioListener raptorCamAudioLis;
+    AudioListener paraurolophusCamAudioLis;
     
 	// Use this for initialization
 	void Start ()
     {
         mainCamAudioLis = mainCamera.GetComponent<AudioListener>();
-        raptorCamAudioLis = raptorCamera.GetComponent<AudioListener>();
+        paraurolophusCamAudioLis = parasaurolophusCamera.GetComponent<AudioListener>();
 	}
 	
 	// Update is called once per frame
@@ -46,14 +46,14 @@ public class CameraManager : MonoBehaviour {
             mainCamera.SetActive(true);
             mainCamAudioLis.enabled = true;
 
-            raptorCamAudioLis.enabled = false;
-            raptorCamera.SetActive(false);
+            paraurolophusCamAudioLis.enabled = false;
+            parasaurolophusCamera.SetActive(false);
         }
 
         if (camPositionCounter == 1)
         {
-            raptorCamera.SetActive(true);
-            raptorCamAudioLis.enabled = true;
+            parasaurolophusCamera.SetActive(true);
+            paraurolophusCamAudioLis.enabled = true;
 
             mainCamAudioLis.enabled = false;
             mainCamera.SetActive(false);
