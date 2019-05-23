@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1a5cc853061e4d74ba1bd2706784aa8b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _lambert1_Normal_DirectX: {fileID: 2800000, guid: 407c44e239fa2724eb065fa9d4c27d27,
+      type: 3}
+  - _lambert1_Base_Color: {fileID: 2800000, guid: 909c43ff46af0e0418c43b105fc57839,
+      type: 3}
+  - _lambert1_Metallic: {fileID: 2800000, guid: 9b2b45a9810cb7943a97d501165047c5,
+      type: 3}
+  - _lambert1_Roughness: {fileID: 2800000, guid: 34f374d2104c229489ecd7645fbdf202,
+      type: 3}
+  - _lambert1_Mixed_AO: {fileID: 2800000, guid: ad342728b2a9ce44b9aa9203a6106151,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
