@@ -84,7 +84,7 @@ public class DinosaurAI : MonoBehaviour
 
     private void DoStateBehaviour()
     {
-        //_pathZone = pathRoot.transform.position;
+        _pathZone = pathRoot.transform.position;
         _targetZone = targetRoot.transform.position;
         _distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         _distanceToNewPos = Vector3.Distance(transform.position, _newPos);
