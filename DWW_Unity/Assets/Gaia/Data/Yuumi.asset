@@ -211,6 +211,89 @@ MonoBehaviour:
         m_RotationOrder: 0
       m_checkTexture: 0
       m_matchingTextures: 
+      m_isActive: 0
+    m_spawnExtensions: []
+  - m_name: Canyon
+    m_texture: {fileID: 2800000, guid: fa3cbffc82fba634f85f43e371b40cc7, type: 3}
+    m_textureFileName: 
+    m_normal: {fileID: 2800000, guid: 3847454e7a848b44abe1b8b82ac1c8c0, type: 3}
+    m_normalFileName: 
+    m_sizeX: 0
+    m_sizeY: 0
+    m_offsetX: 0
+    m_offsetY: 0
+    m_metalic: 0
+    m_smoothness: 0
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 0
+      m_checkHeight: 0
+      m_minHeight: 0
+      m_maxHeight: 0
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_checkSlope: 1
+      m_minSlope: 0.1
+      m_maxSlope: 203.7
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 0
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkTexture: 0
+      m_matchingTextures: 
       m_isActive: 1
     m_spawnExtensions: []
   m_detailPrototypes: []
