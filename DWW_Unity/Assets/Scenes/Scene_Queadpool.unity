@@ -613,6 +613,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 114580024144046662, guid: 50355cf67e19e3342b18a957349209a6,
+        type: 3}
+      propertyPath: maxDistance
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
 --- !u!1 &391477390 stripped
@@ -921,6 +926,12 @@ SpriteRenderer:
 --- !u!1 &534669902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1049652803265326, guid: 50355cf67e19e3342b18a957349209a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 391477389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &534669903 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20569181885932734, guid: 50355cf67e19e3342b18a957349209a6,
     type: 3}
   m_PrefabInstance: {fileID: 391477389}
   m_PrefabAsset: {fileID: 0}
@@ -1540,9 +1551,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446fc6c1a58558a46a91b97bc84cb105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 534669903}
   speed: 6
   gravity: 20
+  _rotSpeed: 5
+  _rotAngle: 10
   crouch: 0
+  _characterCollider: {fileID: 0}
+  _controller: {fileID: 0}
 --- !u!143 &1420042922
 CharacterController:
   m_ObjectHideFlags: 0
