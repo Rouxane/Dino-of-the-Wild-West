@@ -296,7 +296,370 @@ MonoBehaviour:
       m_matchingTextures: 
       m_isActive: 1
     m_spawnExtensions: []
-  m_detailPrototypes: []
+  m_detailPrototypes:
+  - m_name: plane_grass
+    m_renderMode: 2
+    m_detailProtoype: {fileID: 3028436013850413799, guid: da7fa901eac7778478821e3d3e2a9e27,
+      type: 3}
+    m_detailPrototypeFileName: plane_grass.prefab
+    m_detailTexture: {fileID: 0}
+    m_detailTextureFileName: 
+    m_minWidth: 1
+    m_maxWidth: 2
+    m_minHeight: 1
+    m_maxHeight: 2
+    m_noiseSpread: 0.1
+    m_bendFactor: 0.1
+    m_healthyColour: {r: 0.05958529, g: 0.9716981, b: 0.07904076, a: 1}
+    m_dryColour: {r: 0.8039216, g: 0.7372549, b: 0.101960786, a: 1}
+    m_dna:
+      m_width: 2
+      m_height: 2
+      m_boundsRadius: 2
+      m_seedThrow: 6
+      m_minScale: 0.1
+      m_maxScale: 1
+      m_rndScaleInfluence: 0
+      m_extParam: 
+      m_protoIdx: 0
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 1
+      m_checkHeight: 0
+      m_minHeight: 0
+      m_maxHeight: 0
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkSlope: 1
+      m_minSlope: 0
+      m_maxSlope: 3.2
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 0
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      m_checkTexture: 0
+      m_matchingTextures: 
+      m_isActive: 1
+    m_spawnExtensions: []
+  - m_name: plane_grass 0
+    m_renderMode: 2
+    m_detailProtoype: {fileID: 3028436013850413799, guid: da7fa901eac7778478821e3d3e2a9e27,
+      type: 3}
+    m_detailPrototypeFileName: plane_grass.prefab
+    m_detailTexture: {fileID: 0}
+    m_detailTextureFileName: 
+    m_minWidth: 0
+    m_maxWidth: 0
+    m_minHeight: 0
+    m_maxHeight: 0
+    m_noiseSpread: 0
+    m_bendFactor: 0
+    m_healthyColour: {r: 0, g: 0, b: 0, a: 0}
+    m_dryColour: {r: 0, g: 0, b: 0, a: 0}
+    m_dna:
+      m_width: 0
+      m_height: 0
+      m_boundsRadius: 0
+      m_seedThrow: 0
+      m_minScale: 0.1
+      m_maxScale: 1
+      m_rndScaleInfluence: 0
+      m_extParam: 
+      m_protoIdx: 1
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 1
+      m_checkHeight: 1
+      m_minHeight: 4.7989326
+      m_maxHeight: 950
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.05
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_checkSlope: 1
+      m_minSlope: 0
+      m_maxSlope: 28.761314
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.05
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 100
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.3
+          value: 0.2
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_checkTexture: 0
+      m_matchingTextures: '!3'
+      m_isActive: 1
+    m_spawnExtensions: []
+  - m_name: plane_grass 1
+    m_renderMode: 0
+    m_detailProtoype: {fileID: 3028436013850413799, guid: da7fa901eac7778478821e3d3e2a9e27,
+      type: 3}
+    m_detailPrototypeFileName: plane_grass.prefab
+    m_detailTexture: {fileID: 0}
+    m_detailTextureFileName: 
+    m_minWidth: 0
+    m_maxWidth: 0
+    m_minHeight: 0
+    m_maxHeight: 0
+    m_noiseSpread: 0
+    m_bendFactor: 0
+    m_healthyColour: {r: 0, g: 0, b: 0, a: 0}
+    m_dryColour: {r: 0, g: 0, b: 0, a: 0}
+    m_dna:
+      m_width: 0
+      m_height: 0
+      m_boundsRadius: 0
+      m_seedThrow: 0
+      m_minScale: 0.1
+      m_maxScale: 1
+      m_rndScaleInfluence: 0
+      m_extParam: 
+      m_protoIdx: 2
+    m_spawnCriteria:
+    - m_name: 
+      m_checkType: 0
+      m_virginTerrain: 1
+      m_checkHeight: 1
+      m_minHeight: 4.3311696
+      m_maxHeight: 950
+      m_heightFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.05
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_checkSlope: 1
+      m_minSlope: 0
+      m_maxSlope: 25.756676
+      m_slopeFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.05
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_checkProximity: 0
+      m_proximityTag: 
+      m_minProximity: 0
+      m_maxProximity: 100
+      m_proximityFitness:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.3
+          value: 0.2
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_checkTexture: 0
+      m_matchingTextures: '!3'
+      m_isActive: 1
+    m_spawnExtensions: []
   m_treePrototypes:
   - m_name: pine 3
     m_desktopPrefab: {fileID: 195704, guid: 2e17156bf0cfacd40948b0d08c0f3869, type: 3}
@@ -1009,10 +1372,10 @@ MonoBehaviour:
     m_healthyColour: {r: 1, g: 1, b: 1, a: 1}
     m_dryColour: {r: 1, g: 1, b: 1, a: 1}
     m_dna:
-      m_width: 5.6414795
-      m_height: 6.1831665
-      m_boundsRadius: 1.4103699
-      m_seedThrow: 9.27475
+      m_width: 8.059204
+      m_height: 8.83313
+      m_boundsRadius: 2.014801
+      m_seedThrow: 13.249695
       m_minScale: 0.5
       m_maxScale: 1.5
       m_rndScaleInfluence: 0

@@ -41,9 +41,10 @@ MonoBehaviour:
   m_powerDesktopDefaults: {fileID: 0}
   m_powerDesktopResources: {fileID: 0}
   m_powerDesktopGameObjectResources: {fileID: 0}
-  m_lastWebUpdate: 0
+  m_lastWebUpdate: 636947360857324166
   m_hideHeroMessage: 0
-  m_latestNewsTitle: Latest News
-  m_latestNewsBody: Here is the news
-  m_latestNewsUrl: http://www.procedural-worlds.com/blog/
+  m_latestNewsTitle: 'Gaia 1.7: New Tutorials!'
+  m_latestNewsBody: With the release of Gaia 1.7 we have revamped the entire tutorials
+    section. Please take a moment to check them out!
+  m_latestNewsUrl: http://www.procedural-worlds.com/gaia/?section=tutorials
   m_latestNewsImage: {fileID: 0}
