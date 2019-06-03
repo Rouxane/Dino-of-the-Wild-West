@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 66ce0ba7c22be254b8d0fe724fb55a50
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Accessories_Normal_DirectX: {fileID: 2800000, guid: 2ffd7f28b0281a842aeceeea36e8be28,
+      type: 3}
+  - _Accessories_Base_Color: {fileID: 2800000, guid: 3f01fe5ee2d15bd4bb2289f9d3feeea7,
+      type: 3}
+  - _Accessories_Roughness: {fileID: 2800000, guid: cd981def37515394fbe91365829a7154,
+      type: 3}
+  - _Accessories_Mixed_AO: {fileID: 2800000, guid: 55f9475c3ab2f7e4d81cabb6db5121a0,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
