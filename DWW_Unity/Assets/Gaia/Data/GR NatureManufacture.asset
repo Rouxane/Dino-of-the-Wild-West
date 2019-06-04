@@ -497,7 +497,8 @@ MonoBehaviour:
   m_detailPrototypes:
   - m_name: Grass 1 Wide
     m_renderMode: 2
-    m_detailProtoype: {fileID: 0}
+    m_detailProtoype: {fileID: 3028436013850413799, guid: da7fa901eac7778478821e3d3e2a9e27,
+      type: 3}
     m_detailPrototypeFileName: 
     m_detailTexture: {fileID: 2800000, guid: 0d85f7eb5a06e4a4fa7ccbd554dae100, type: 3}
     m_detailTextureFileName: Grass 1 Wide.psd
