@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6425c7b0c05e8914aa1d79cbedec16b6
+labels:
+- Ground
+- Desert
+- PBR
+- PBS
+- Sand
+- Sandstone
+- Terrain
+- Yellow
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

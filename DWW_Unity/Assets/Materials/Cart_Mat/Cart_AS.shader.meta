@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fb424504728e6bd499a71b96f1956791
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _blinn2_Normal_DirectX: {fileID: 2800000, guid: bd963560875615647af43020e9bae93d,
+      type: 3}
+  - _blinn2_Base_Color: {fileID: 2800000, guid: 1f072cd9958956f43a3710be2bc48916,
+      type: 3}
+  - _blinn2_Metallic: {fileID: 2800000, guid: e37e0c0fcf181e54cada6304392308b5, type: 3}
+  - _blinn2_Roughness: {fileID: 2800000, guid: 31ecd21c6d6018243897ad442e7f75f9, type: 3}
+  - _blinn2_Mixed_AO: {fileID: 2800000, guid: cfd10b2df7c160d4a9000d210e09b5e6, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

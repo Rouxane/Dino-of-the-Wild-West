@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 83008812049fabb4f9a54c239f73a64d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Teeth_Normal_DirectX: {fileID: 2800000, guid: 2d8b05cfa0e5f80408c2d5393c27cb93,
+      type: 3}
+  - _Teeth_Base_Color: {fileID: 2800000, guid: 8817b08c512552b489c3b2350094be67, type: 3}
+  - _Teeth_Roughness: {fileID: 2800000, guid: 7ca2d02364668b649b4a348ffcbe3ada, type: 3}
+  - _Teeth_Mixed_AO: {fileID: 2800000, guid: 586a07675a3293445b6132e2d0a22882, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

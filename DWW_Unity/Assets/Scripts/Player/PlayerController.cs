@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private Camera _camera;
     [SerializeField] private Animator _animator;
 
-    public float _speed = 6.0F;
-    public float _gravity = 20.0F;
+    [SerializeField] private float _speed = 6.0F;
+    [SerializeField] private float _gravity = 20.0F;
     [SerializeField] private Vector3 moveDirection = Vector3.zero;
     [SerializeField] private float _rotSpeed = 5.0f;
     [SerializeField] private float _rotAngle = 45.0f;
@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        //float angleDiff = Vector3.Angle(transform.forward, moveDirection);
 
         _animator.SetFloat("Speed", _speed);
 
@@ -35,13 +34,15 @@ public class PlayerController : MonoBehaviour {
 
         if (moveDirection != Vector3.zero)
         {
+            _animator.SetBool("IsWalking", true);
             Rotate();
         }
-
-        //if (angleDiff < _rotAngle)
+        else
         {
-            DoMove();
+            _animator.SetBool("IsWalking", false);
         }
+
+        DoMove();
 
         // Crouch
         IsPlayerCrouched();
@@ -92,15 +93,15 @@ public class PlayerController : MonoBehaviour {
         if (crouchSet == 0)
         {
             crouch = false;
-            _animator.SetInteger("IsCrouching", 2);
-            //_animator.SetInteger("IsCrouching", 0);
+            _speed = 6.0f;
+            _animator.SetBool("IsCrouching", false);
         }
 
         if (crouchSet == 1)
         {
             crouch = true;
-            _animator.SetInteger("IsCrouching", 1);
-            //_animator.SetInteger("IsCrouching", 0);
+            _speed = 3.0f;
+            _animator.SetBool("IsCrouching", true);
         }
     }
 }
