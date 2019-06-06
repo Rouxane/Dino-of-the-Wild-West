@@ -5,15 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     [SerializeField] private Camera _camera;
+    [SerializeField] private Animator _animator;
 
-    public float speed = 6.0F;
-    public float gravity = 20.0F;
-    private Vector3 moveDirection = Vector3.zero;
+    public float _speed = 6.0F;
+    public float _gravity = 20.0F;
+    [SerializeField] private Vector3 moveDirection = Vector3.zero;
     [SerializeField] private float _rotSpeed = 5.0f;
     [SerializeField] private float _rotAngle = 45.0f;
 
     public bool crouch;
-    private int crouchSet = 0;
+    [SerializeField] private int crouchSet = 0;
 
     [SerializeField] private CharacterController _characterCollider;
     [SerializeField] private CharacterController _controller;
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //float angleDiff = Vector3.Angle(transform.forward, moveDirection);
+
+        _animator.SetFloat("Speed", _speed);
 
         ComputeMove();
 
@@ -50,13 +53,13 @@ public class PlayerController : MonoBehaviour {
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
             moveDirection = _camera.transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
+            moveDirection *= _speed;
         }
     }
 
     private void DoMove()
     {
-        moveDirection.y -= gravity * Time.deltaTime;
+        moveDirection.y -= _gravity * Time.deltaTime;
         _controller.Move(moveDirection * Time.deltaTime);
     }
 
@@ -89,13 +92,15 @@ public class PlayerController : MonoBehaviour {
         if (crouchSet == 0)
         {
             crouch = false;
-            transform.localScale = new Vector3(1, 1, 1);
+            _animator.SetInteger("IsCrouching", 2);
+            //_animator.SetInteger("IsCrouching", 0);
         }
 
         if (crouchSet == 1)
         {
             crouch = true;
-            transform.localScale = new Vector3(1, 0.5f, 1);
+            _animator.SetInteger("IsCrouching", 1);
+            //_animator.SetInteger("IsCrouching", 0);
         }
     }
 }
