@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:DWW_Unity/Assets/Materials/Cart_Mat.meta
 guid: 5aedf3b3869b09b4481921539f498cd1
+=======
+guid: 31fadd6b4caabab42a4ca99aa74cd6f1
+>>>>>>> master:DWW_Unity/Assets/Barrières/Pilar_textures1x1.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
