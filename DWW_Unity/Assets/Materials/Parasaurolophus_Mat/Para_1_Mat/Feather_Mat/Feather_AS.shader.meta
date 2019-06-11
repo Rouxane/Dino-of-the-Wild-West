@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 2540cf682f7d2484c8fd5000ec86be61
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Plumespourorange: {fileID: 2800000, guid: 4a73808d6a26c794e8056ab2fbe4833a, type: 3}
+  - _transparenceplumes: {fileID: 2800000, guid: 69d29aae5589c0840801fce0097fddb0,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e10b51aa11615941a60f9bfa05a16cb
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Lowpara_Low_Normal: {fileID: 2800000, guid: 5ce68d1c15d19d348bcd4b4a82049d02,
+      type: 3}
+  - _Lowpara_Low_BaseColor: {fileID: 2800000, guid: baac3dd25b64af841904576ee6fc66e4,
+      type: 3}
+  - _Lowpara_Low_Roughness: {fileID: 2800000, guid: c5571d3579c26c3459197269efa484ad,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
