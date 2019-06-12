@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a4db8076853518d48a913cf511c2b01c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _White_cap_Normal_DirectX: {fileID: 2800000, guid: 9121f1386e00de24a8a8795d4c421b63,
+      type: 3}
+  - _White_cap_Base_Color: {fileID: 2800000, guid: 8dc0c54e80a440641ab579a5187e6672,
+      type: 3}
+  - _White_cap_Roughness: {fileID: 2800000, guid: e441577ff67671f408544f34fa304480,
+      type: 3}
+  - _Mixed_AO: {fileID: 2800000, guid: a24d346131c3fa645ae61d17fdc50bc8, type: 3}
+  - _Opacity: {fileID: 2800000, guid: 3d08ca788d0a208438a6689908bfae4e, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

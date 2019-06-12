@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: bc3ac51cbb73c9c4797b2efdf1f13140
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _ConiferBark_Normal: {fileID: 2800000, guid: 7126b45c2fd88e849936e6b9c62a983c,
+      type: 3}
+  - _ConiferBark: {fileID: 2800000, guid: 4c6082e5828f3f642b05f3da7f1cd86e, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

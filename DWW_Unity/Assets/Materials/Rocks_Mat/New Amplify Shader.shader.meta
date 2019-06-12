@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5cbb91739a80e5e45b98a5714a38683e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _DRF_Rocks_DetailNRM: {fileID: 2800000, guid: c7a05666902a4fb44803b98f302f2abb,
+      type: 3}
+  - _DRF_Rocks_Albedo: {fileID: 2800000, guid: 857c0ee37bd38f640a3eaf22f60ebabd, type: 3}
+  - _DRF_Rocks_Specular: {fileID: 2800000, guid: 70349240a0b1d2541b301251216bca53,
+      type: 3}
+  - _DRF_Rocks_AO: {fileID: 2800000, guid: 3cff736b1c6438f479603a26e18c5fc8, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

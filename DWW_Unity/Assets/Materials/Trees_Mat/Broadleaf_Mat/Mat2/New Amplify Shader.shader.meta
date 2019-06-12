@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f362fb16b71c4ee41ab57172b7a6db3c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Broadleaves_Card_Desktop_Normal: {fileID: 2800000, guid: df903daee9c1f3949a46137cbe5a7239,
+      type: 3}
+  - _Broadleaves_Card_Desktop: {fileID: 2800000, guid: ff0ca242ca64c184d868ec0aec2c2de4,
+      type: 3}
+  - _Broadleaves_Card_Desktop_Spec: {fileID: 2800000, guid: a009f17e9ef9c2f459b20d95cf6aefb6,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
