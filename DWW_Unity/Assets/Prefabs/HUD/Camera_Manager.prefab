@@ -27,7 +27,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1935323772857975299}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44,4 +45,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  raptorCamera: {fileID: 0}
+  parasaurolophusCamera: {fileID: 0}
+--- !u!1001 &1933537049413496465
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2333795558259676340}
+    m_Modifications:
+    - target: {fileID: 1376632010829124, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_Name
+      value: Camera_Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114252763003508626, guid: 50355cf67e19e3342b18a957349209a6,
+        type: 3}
+      propertyPath: cameraFollowObj
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583636468673500, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583636468673500, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_Name
+      value: Parasaurolophus_Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049652803265326, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114580024144046662, guid: 50355cf67e19e3342b18a957349209a6,
+        type: 3}
+      propertyPath: maxDistance
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 50355cf67e19e3342b18a957349209a6, type: 3}
+--- !u!4 &1935323772857975299 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4199052233714834, guid: 50355cf67e19e3342b18a957349209a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1933537049413496465}
+  m_PrefabAsset: {fileID: 0}
