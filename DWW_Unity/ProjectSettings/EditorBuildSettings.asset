@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Queadpool.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Scene_Benjamin/Main_Menu.unity
+    guid: a68eafe70b1adb04f92c79480dff2f34
+  - enabled: 1
+    path: Assets/Scenes/Scene_Gaia.unity
+    guid: b6567b4285f307543b7287e62aa72d3a
   m_configObjects: {}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DinosaurAI : MonoBehaviour
+public class DinosaurAI_Peace : MonoBehaviour
 {
     public enum State
     {
@@ -129,18 +129,18 @@ public class DinosaurAI : MonoBehaviour
             case State.Walk:
                 {
                     // (Player pas accroupi && Player dans la zone de detection) || Player accroupi mais trop proche
-                    if (((!playerControl.crouch) && (_distanceToPlayer < _runAwayDistance)) || (_distanceToPlayer < 5.0f))
-                    {
-                        _newPos = Vector3.zero;
-                        _randomWayPoint = Vector3.zero;
-                        agent.ResetPath();
-                        animator.SetBool("State Walk", false);
+                    //if (((!playerControl.crouch) && (_distanceToPlayer < _runAwayDistance)) || (_distanceToPlayer < 5.0f))
+                    //{
+                    //    _newPos = Vector3.zero;
+                    //    _randomWayPoint = Vector3.zero;
+                    //    agent.ResetPath();
+                    //    animator.SetBool("State Walk", false);
 
-                        _currentState = State.RunAway;
-                        DoStateBehaviour();
-                    }
+                    //    _currentState = State.RunAway;
+                    //    DoStateBehaviour();
+                    //}
                     // Dinosaure atteint sa destination
-                    else if (_distanceToNewPos < 2.0f)
+                    /*else*/ if (_distanceToNewPos < 2.0f)
                     {
                         _newPos = Vector3.zero;
                         _randomWayPoint = Vector3.zero;
@@ -150,16 +150,16 @@ public class DinosaurAI : MonoBehaviour
                         ChangeState();
                     }
                     // Player dans la zone du Monde des ames
-                    else if ((_distanceToPlayer < 10.0f) && (Input.GetKeyDown(KeyCode.E)))
-                    {
-                        _newPos = Vector3.zero;
-                        _randomWayPoint = Vector3.zero;
-                        agent.ResetPath();
-                        animator.SetBool("State Walk", false);
+                    //else if ((_distanceToPlayer < 10.0f) && (Input.GetKeyDown(KeyCode.E)))
+                    //{
+                    //    _newPos = Vector3.zero;
+                    //    _randomWayPoint = Vector3.zero;
+                    //    agent.ResetPath();
+                    //    animator.SetBool("State Walk", false);
 
-                        _currentState = State.Soul;
-                        DoStateBehaviour();
-                    }
+                    //    _currentState = State.Soul;
+                    //    DoStateBehaviour();
+                    //}
                     else
                     {
                         Walk();
@@ -169,16 +169,16 @@ public class DinosaurAI : MonoBehaviour
             case State.Eat:
                 {
                     // (Player pas accroupi && Player dans la zone de detection) || Player accroupi mais trop proche
-                    if (((!playerControl.crouch) && (_distanceToPlayer < _runAwayDistance)) || (_distanceToPlayer < 5.0f))
-                    {
-                        _stateTimer = 0.0f;
-                        animator.SetBool("State Eat", false);
+                    //if (((!playerControl.crouch) && (_distanceToPlayer < _runAwayDistance)) || (_distanceToPlayer < 5.0f))
+                    //{
+                    //    _stateTimer = 0.0f;
+                    //    animator.SetBool("State Eat", false);
 
-                        _currentState = State.RunAway;
-                        DoStateBehaviour();
-                    }
+                    //    _currentState = State.RunAway;
+                    //    DoStateBehaviour();
+                    //}
                     // Animation finie
-                    else if (_stateTimer > 5.0f)
+                    /*else*/ if (_stateTimer > 5.0f)
                     {
                         _stateTimer = 0.0f;
                         animator.SetBool("State Eat", false);
@@ -186,14 +186,14 @@ public class DinosaurAI : MonoBehaviour
                         ChangeState();
                     }
                     // Player dans la zone du Monde des ames
-                    else if ((_distanceToPlayer < 10.0f) && (Input.GetKeyDown(KeyCode.E)))
-                    {
-                        _stateTimer = 0.0f;
-                        animator.SetBool("State Eat", false);
+                    //else if ((_distanceToPlayer < 10.0f) && (Input.GetKeyDown(KeyCode.E)))
+                    //{
+                    //    _stateTimer = 0.0f;
+                    //    animator.SetBool("State Eat", false);
 
-                        _currentState = State.Soul;
-                        DoStateBehaviour();
-                    }
+                    //    _currentState = State.Soul;
+                    //    DoStateBehaviour();
+                    //}
                     else
                     {
                         Eat();
@@ -203,16 +203,16 @@ public class DinosaurAI : MonoBehaviour
             case State.Watch:
                 {
                     // (Player pas accroupi && Player dans la zone de detection) || Player accroupi mais trop proche
-                    if (((!playerControl.crouch) && (_distanceToPlayer < _runAwayDistance)) || (_distanceToPlayer < 5.0f))
-                    {
-                        _stateTimer = 0.0f;
-                        animator.SetBool("State Watch", false);
+                    //if (((!playerControl.crouch) && (_distanceToPlayer < _runAwayDistance)) || (_distanceToPlayer < 5.0f))
+                    //{
+                    //    _stateTimer = 0.0f;
+                    //    animator.SetBool("State Watch", false);
 
-                        _currentState = State.RunAway;
-                        DoStateBehaviour();
-                    }
+                    //    _currentState = State.RunAway;
+                    //    DoStateBehaviour();
+                    //}
                     // Animation finie
-                    else if (_stateTimer > 4.0f)
+                    /*else*/ if (_stateTimer > 4.0f)
                     {
                         _stateTimer = 0.0f;
                         animator.SetBool("State Watch", false);
@@ -220,73 +220,73 @@ public class DinosaurAI : MonoBehaviour
                         ChangeState();
                     }
                     // Player dans la zone du Monde des ames
-                    else if ((_distanceToPlayer < 10.0f) && (Input.GetKeyDown(KeyCode.E)))
-                    {
-                        _stateTimer = 0.0f;
-                        animator.SetBool("State Watch", false);
+                    //else if ((_distanceToPlayer < 10.0f) && (Input.GetKeyDown(KeyCode.E)))
+                    //{
+                    //    _stateTimer = 0.0f;
+                    //    animator.SetBool("State Watch", false);
 
-                        _currentState = State.Soul;
-                        DoStateBehaviour();
-                    }
+                    //    _currentState = State.Soul;
+                    //    DoStateBehaviour();
+                    //}
                     else
                     {
                         Watch();
                     }
                     break;
                 }
-            case State.RunAway:
-                {
-                    // Dinosaure atteint sa destination
-                    if (_distanceToRunPos < 2.0f)
-                    {
-                        _newPosToRun = Vector3.zero;
-                        _randomRunPoint = Vector3.zero;
-                        agent.ResetPath();
-                        animator.SetBool("State Run Away", false);
+            //case State.RunAway:
+            //    {
+            //        // Dinosaure atteint sa destination
+            //        if (_distanceToRunPos < 2.0f)
+            //        {
+            //            _newPosToRun = Vector3.zero;
+            //            _randomRunPoint = Vector3.zero;
+            //            agent.ResetPath();
+            //            animator.SetBool("State Run Away", false);
 
-                        ChangeState();
-                    }
-                    else
-                    {
-                        RunAway();
-                    }              
-                    break;
-                }
-            case State.Soul:
-                {
-                    if (_soulGauge <= 0)
-                    {
-                        _soulGauge = 50.0f;
-                        canvasSoul.SetActive(false);
-                        soulBar.SetActive(false);
-                        animator.SetBool("State Soul", false);
+            //            ChangeState();
+            //        }
+            //        else
+            //        {
+            //            RunAway();
+            //        }              
+            //        break;
+            //    }
+            //case State.Soul:
+            //    {
+            //        if (_soulGauge <= 0)
+            //        {
+            //            _soulGauge = 50.0f;
+            //            canvasSoul.SetActive(false);
+            //            soulBar.SetActive(false);
+            //            animator.SetBool("State Soul", false);
 
-                        _currentState = State.RunAway;
-                        DoStateBehaviour();
-                    }
-                    else if (_soulGauge >= 100)
-                    {
-                        canvasSoul.SetActive(false);
-                        soulBar.SetActive(false);
-                        animator.SetBool("State Soul", false);
+            //            _currentState = State.RunAway;
+            //            DoStateBehaviour();
+            //        }
+            //        else if (_soulGauge >= 100)
+            //        {
+            //            canvasSoul.SetActive(false);
+            //            soulBar.SetActive(false);
+            //            animator.SetBool("State Soul", false);
 
-                        _currentState = State.Tamed;
-                        DoStateBehaviour();
-                    }
-                    else
-                    {
-                        Soul();
-                    }
-                    break;
-                }
-            case State.Tamed:
-                {
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        mounted = true;
-                    }
-                    break;
-                }
+            //            _currentState = State.Tamed;
+            //            DoStateBehaviour();
+            //        }
+            //        else
+            //        {
+            //            Soul();
+            //        }
+            //        break;
+            //    }
+            //case State.Tamed:
+            //    {
+            //        if (Input.GetKeyDown(KeyCode.E))
+            //        {
+            //            mounted = true;
+            //        }
+            //        break;
+            //    }
         }
     }
 
@@ -331,72 +331,72 @@ public class DinosaurAI : MonoBehaviour
         animator.SetBool("State Watch", true);
     }
 
-    private void RunAway()
-    {
-        if (_randomRunPoint == Vector3.zero)
-        {
-            _randomRunPoint = Random.insideUnitSphere * 18;
-            _randomRunPoint.y = 0;
-            _newPosToRun = _pathZone + _randomRunPoint;
-            agent.SetDestination(_newPosToRun);
-        }
+    //private void RunAway()
+    //{
+    //    if (_randomRunPoint == Vector3.zero)
+    //    {
+    //        _randomRunPoint = Random.insideUnitSphere * 18;
+    //        _randomRunPoint.y = 0;
+    //        _newPosToRun = _pathZone + _randomRunPoint;
+    //        agent.SetDestination(_newPosToRun);
+    //    }
 
-        animator.SetBool("State Run Away", true);
-    }
+    //    animator.SetBool("State Run Away", true);
+    //}
 
-    private void Soul()
-    {
-        if (!canvasSoul.activeSelf)
-        {
-            canvasSoul.SetActive(true);
-        }
+    //private void Soul()
+    //{
+    //    if (!canvasSoul.activeSelf)
+    //    {
+    //        canvasSoul.SetActive(true);
+    //    }
 
-        if (!soulBar.activeSelf)
-        {
-            soulBar.SetActive(true);
-        }
+    //    if (!soulBar.activeSelf)
+    //    {
+    //        soulBar.SetActive(true);
+    //    }
 
-        if (_randomTargetPoint == Vector3.zero || _stateTimer > 2.0f)
-        {
-            _randomTargetPoint = Random.insideUnitSphere;
-            _newPosTarget = _targetZone + _randomTargetPoint;
-            _stateTimer = 0;
-            SpawnTarget();
-        }
+    //    if (_randomTargetPoint == Vector3.zero || _stateTimer > 2.0f)
+    //    {
+    //        _randomTargetPoint = Random.insideUnitSphere;
+    //        _newPosTarget = _targetZone + _randomTargetPoint;
+    //        _stateTimer = 0;
+    //        SpawnTarget();
+    //    }
 
-        _stateTimer += Time.deltaTime;
-        _soulGauge -= Time.deltaTime * 5;
+    //    _stateTimer += Time.deltaTime;
+    //    _soulGauge -= Time.deltaTime * 5;
 
-        SetSizeSoulBar();
+    //    SetSizeSoulBar();
 
-        animator.SetBool("State Soul", true);
-    }
+    //    animator.SetBool("State Soul", true);
+    //}
 
-    private void SpawnTarget()
-    {
-        Target target = DataBaseManager.Instance.dataBase.target;
-        if (target == null)
-        {
-            Debug.LogError("Missing Target Reference");
-        }
-        else
-        {
-            Target newTarget = Instantiate(target);
-            newTarget.transform.position = _newPosTarget;
-            newTarget.DinosaurInstance = this;
-        }
-    }
+    //private void SpawnTarget()
+    //{
+    //    Target target = DataBaseManager.Instance.dataBase.target;
+    //    if (target == null)
+    //    {
+    //        Debug.LogError("Missing Target Reference");
+    //    }
+    //    else
+    //    {
+    //        Target newTarget = Instantiate(target);
+    //        newTarget.transform.position = _newPosTarget;
+    //        newTarget.DinosaurInstance = this;
+    //    }
+    //}
 
-    public void TargetDestroyed()
-    {
-        _soulGauge += 50.0f;
-    }
+    //public void TargetDestroyed()
+    //{
+    //    _soulGauge += 50.0f;
+    //}
 
-    private void SetSizeSoulBar()
-    {
-        _percentSoulGauge = _soulGauge / 100;
-        soulBarSprite.transform.localScale = new Vector3(_percentSoulGauge, 1, 1);
-    }
+    //private void SetSizeSoulBar()
+    //{
+    //    _percentSoulGauge = _soulGauge / 100;
+    //    soulBarSprite.transform.localScale = new Vector3(_percentSoulGauge, 1, 1);
+    //}
 
     private void OnDrawGizmos()
     {
