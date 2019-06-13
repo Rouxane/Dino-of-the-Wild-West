@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     [SerializeField] private Camera _camera;
     [SerializeField] private Animator _animator;
+    [SerializeField] private DinosaurAI _para;
 
     [SerializeField] private float _speed = 6.0F;
     [SerializeField] private float _gravity = 20.0F;
@@ -13,22 +15,27 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float _rotSpeed = 5.0f;
     [SerializeField] private float _rotAngle = 45.0f;
 
-    public bool crouch;
+    [SerializeField] public bool crouch;
     [SerializeField] private int crouchSet = 0;
 
     [SerializeField] private CharacterController _characterCollider;
     [SerializeField] private CharacterController _controller;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         _characterCollider = gameObject.GetComponent<CharacterController>();
         _controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
-        _animator.SetFloat("Speed", _speed);
+        if (_para.mounted)
+        {
+            _animator.SetBool("IsRiding", true);
+        }
 
         ComputeMove();
 

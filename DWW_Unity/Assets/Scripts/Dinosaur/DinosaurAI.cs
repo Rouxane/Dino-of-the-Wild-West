@@ -16,6 +16,7 @@ public class DinosaurAI : MonoBehaviour
     }
 
     [Header("Settings")]
+    [SerializeField] private Camera _camera;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject pathRoot;
@@ -30,7 +31,7 @@ public class DinosaurAI : MonoBehaviour
 
     [Header("State Settings")]
     [SerializeField] private bool _tamed = false;
-    [SerializeField] private bool _mounted = false;
+    [SerializeField] public bool mounted = false;
     [SerializeField] private State _currentState = State.Walk;
     [SerializeField] private float _stateTimer;
 
@@ -60,6 +61,10 @@ public class DinosaurAI : MonoBehaviour
 
     [Header("Tamed Settings")]
     [SerializeField] private float _tameDistance = 5.0f;
+    [SerializeField] private Vector3 moveDirection = Vector3.zero;
+    [SerializeField] private float _speed = 6.0F;
+    [SerializeField] private float _gravity = 20.0F;
+    [SerializeField] private float _rotSpeed = 5.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -72,14 +77,43 @@ public class DinosaurAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!_mounted)
+        if (!mounted)
         {
             DoStateBehaviour();
         }
         else
         {
             transform.position = player.transform.position;
+
+            ComputeMove();
+
+            if (moveDirection != Vector3.zero)
+            {
+                animator.SetBool("State Walk", true);
+                Rotate();
+            }
+            else
+            {
+                animator.SetBool("State Walk", false);
+            }
+
         }
+    }
+
+    private void ComputeMove()
+    {
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
+        moveDirection = _camera.transform.TransformDirection(moveDirection);
+        moveDirection *= _speed;
+    }
+
+    private void Rotate()
+    {
+        Vector3 lookDirection = moveDirection;
+        lookDirection.y = 0;
+
+        Quaternion rotation = Quaternion.LookRotation(lookDirection);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _rotSpeed * Time.deltaTime);
     }
 
     private void DoStateBehaviour()
@@ -249,7 +283,7 @@ public class DinosaurAI : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        _mounted = true;
+                        mounted = true;
                     }
                     break;
                 }
@@ -355,7 +389,7 @@ public class DinosaurAI : MonoBehaviour
 
     public void TargetDestroyed()
     {
-        _soulGauge += 20.0f;
+        _soulGauge += 50.0f;
     }
 
     private void SetSizeSoulBar()
